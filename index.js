@@ -42,7 +42,7 @@ function sendMessage() {
 //sendMessage();
 
 // Send messages every 5 minutes
-const interval = setInterval(sendMessage, 3 * 60 * 1000);
+const interval = setInterval(sendMessage, 6 * 30 * 60 * 1000);
 
 // Set up the server
 app.listen(3000, function() {
