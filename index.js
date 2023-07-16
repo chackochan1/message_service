@@ -3,7 +3,7 @@ const request = require('request');
 const app = express();
 
 const accountSid = 'AC4353e0ff88f5a073591d305255be3ccc';
-const authToken = 'b1f9f2944db8889cf9818b57c2b1e26b';
+const authToken = '60ffbb34d2567869a5768ee5d3f107b9';
 const client = require('twilio')(accountSid, authToken);
 
 const numbers = ['+918089505615', '+918606083903', '+917593979500','+917736866206'];
