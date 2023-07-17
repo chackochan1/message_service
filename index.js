@@ -3,7 +3,7 @@ const request = require('request');
 const app = express();
 
 const accountSid = 'AC4353e0ff88f5a073591d305255be3ccc';
-const authToken = '60ffbb34d2567869a5768ee5d3f107b9';
+const authToken = ' ';
 const client = require('twilio')(accountSid, authToken);
 
 const numbers = ['+918089505615', '+918606083903', '+917593979500','+917736866206'];
@@ -13,7 +13,7 @@ function sendMessage() {
   request.get({
     url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
     headers: {
-      'X-Api-Key': 'OA2noOJNZXyS8/iC+xdfEQ==Nyk2IwcOU47ynHri'
+      'X-Api-Key': 'Oa2noOJNZXyS8/iC+xdfEQ==Nyk2IwcOU47ynHri'
     },
   }, function(error, response, body) {
     if (error) return console.error('Request failed:', error);
@@ -42,7 +42,7 @@ function sendMessage() {
 //sendMessage();
 
 // Send messages every 5 minutes
-const interval = setInterval(sendMessage, 8 * 60 * 60 * 1000);
+const interval = setInterval(sendMessage, 8  * 60 * 1000);
 
 // Set up the server
 app.listen(3000, function() {
