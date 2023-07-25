@@ -2,11 +2,11 @@ const express = require("express");
 const request = require('request');
 const app = express();
 
-const accountSid = 'AC4353e0ff88f5a073591d305255be3ccc';
+const accountSid = ' ';
 const authToken = ' ';
 const client = require('twilio')(accountSid, authToken);
 
-const numbers = ['+918089505615', '+918606083903', '+917593979500','+917736866206'];
+const numbers = [''];
 
 function sendMessage() {
   var category = 'money';
